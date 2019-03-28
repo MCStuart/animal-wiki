@@ -3,7 +3,7 @@ $(document).ready(function() {
     event.preventDefault();
     var selection = $('#animal').val();
     console.log(selection);
-    function myFunction(selection) {
+    function ohMy(selection) {
       if (selection === "lions") {
         $("#lionCard").show();
         $("#tigerCard").hide();
@@ -25,6 +25,6 @@ $(document).ready(function() {
         $("#bearCard").hide();
       }
     };
-    myFunction(selection);
+    ohMy(selection);
   });
 });
