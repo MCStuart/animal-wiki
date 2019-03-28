@@ -2,3 +2,15 @@ img{
   width: 300%;
   border: 4px solid black;
 }
+
+#tigerCard {
+  display: none;
+}
+
+#lionCard {
+  display: none;
+}
+
+#bearCard {
+  display: none;
+}

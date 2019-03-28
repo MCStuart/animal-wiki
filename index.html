@@ -11,36 +11,40 @@
   <body>
     <div class="container">
       <h1>Animal Wiki</h1>
-      <select class="form-control" id="animal">
-        <option value="lions">Lions</option>
-        <option value="tigers">And Tigers</option>
-        <option value="bears">And Bears OH My</option>
-      </select>
-
-      <div class="card" style="width: 18rem;">
+      <form class="change" action="index.html" method="post">
+        <label for="animal-select">Pick an animal to learn more:</label>
+        <select class="form-control" id="animal">
+          <option value="">--Please choose an option--</option>
+          <option value="lions">Lions</option>
+          <option value="tigers">And Tigers</option>
+          <option value="bears">And Bears OH My</option>
+        </select>
+        <input type="submit" value="Submit">
+      </form>
+      <br>
+      <br>
+      <div class="card" style="width: 18rem;" id="lionCard">
         <img class="card-img-top" src="img/lion.jpg" alt="lion">
         <div class="card-body">
           <h5 class="card-title">Lions</h5>
           <p class="card-text">We don't know anything about this animal, so go check out wikipedia.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="https://en.wikipedia.org/wiki/Lionel_Messi" class="btn btn-primary">Check out this Lion</a>
         </div>
       </div>
-
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem;" id="tigerCard">
         <img class="card-img-top" src="img/tiger.jpg" alt="tiger">
         <div class="card-body">
           <h5 class="card-title">Tigers</h5>
           <p class="card-text">We don't know anything about this animal, so go check out wikipedia.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="https://en.wikipedia.org/wiki/Tiger_Woods" class="btn btn-primary">This Tiger looks good in green</a>
         </div>
       </div>
-
-      <div class="card" style="width: 18rem;">
+      <div class="card" style="width: 18rem;" id="bearCard">
         <img class="card-img-top" src="img/bear.jpg" alt="bear">
         <div class="card-body">
           <h5 class="card-title">Bears</h5>
           <p class="card-text">We don't know anything about this animal, so go check out wikipedia.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <a href="https://en.wikipedia.org/wiki/Baloo" class="btn btn-primary">Bear Necessities</a>
         </div>
       </div>
     </div>
